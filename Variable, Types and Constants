@@ -1,0 +1,76 @@
+package main
+
+import "fmt"
+
+// Declare LoginToken as a constant with value "Maniac"
+const LoginToken string = "Maniac"
+
+func main() {
+	// Declare a variable called username of type string and assign it a value "Mayank"
+	var username string = "Mayank"
+
+	// Print the value of username to the console
+	fmt.Println(username)
+
+	// Print the data type of the variable username to the console
+	fmt.Printf("Variable is of Type: %T \n", username)
+
+	// Declare a boolean variable called isloggedIn and assign it a value of false
+	var isloggedIn bool = false
+	fmt.Println(isloggedIn)
+	fmt.Printf("Variable is of Type: %T \n", isloggedIn)
+
+	// Declare a variable called smallVal of type uint8 and assign it a value of 255
+	var smallVal uint8 = 255
+	fmt.Println(smallVal)
+	fmt.Printf("Variable is of type: %T \n", smallVal)
+
+	// Declare a variable called smallFloat of type float64 and assign it a value of 234.5678901234567890
+	var smallFloat float64 = 234.5678901234567890
+	fmt.Println(smallFloat)
+	fmt.Printf("Variable is of type: %T \n", smallFloat)
+
+	// Declare anotherVariable as an int variable without an initial value
+	var anotherVariable int
+	fmt.Println(anotherVariable)
+	fmt.Printf("Variable is of type: %T \n", anotherVariable)
+
+	// Declare a variable called website and implicitly assign it a value of "example.com"
+	var website = "example.com"
+	fmt.Println(website)
+
+	// Declare numberOfUser and implicitly assign it a value of 100000
+	numberOfUser := 100000
+	fmt.Println(numberOfUser)
+
+	// Print the value of LoginToken to the console
+	fmt.Println(LoginToken)
+	fmt.Printf("Variable is of type: %T \n", LoginToken)
+
+}
+
+Output : -
+Mayank
+Variable is of Type: string
+
+false
+Variable is of Type: bool 
+
+255
+Variable is of type: uint8 
+
+234.56789012345678
+Variable is of type: float64 
+
+0
+Variable is of type: int 
+
+example.com
+
+100000
+
+Maniac
+
+Variable is of type: string 
+
+Program exited.
