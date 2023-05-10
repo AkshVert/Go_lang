@@ -1,0 +1,50 @@
+
+
+| Type | Description | Example |
+
+| bool | Represents a boolean value, which can be either true or false. | `var isTrue bool = true` |
+| string | Represents a string of characters. | `var message string = "Hello, world!"` |
+| int | Represents a signed integer value. | `var age int = 30` |
+| int8 | Represents a signed 8-bit integer value. | `var score int8 = 127` |
+| int16 | Represents a signed 16-bit integer value. | `var temperature int16 = -273` |
+| int32 | Represents a signed 32-bit integer value. | `var distance int32 = 1000000` |
+| int64 | Represents a signed 64-bit integer value. | `var population int64 = 7000000000` |
+| uint | Represents an unsigned integer value. | `var count uint = 10` |
+| uint8 | Represents an unsigned 8-bit integer value. | `var value uint8 = 255` |
+| uint16 | Represents an unsigned 16-bit integer value. | `var limit uint16 = 65535` |
+| uint32 | Represents an unsigned 32-bit integer value. | `var limit uint32 = 4294967295` |
+| uint64 | Represents an unsigned 64-bit integer value. | `var limit uint64 = 18446744073709551615` |
+| float32 | Represents a single-precision floating-point value. | `var price float32 = 9.99` |
+| float64 | Represents a double-precision floating-point value. | `var distance float64 = 3.141592653589793` |
+| complex64 | Represents a complex number with float32 real and imaginary parts. | `var z complex64 = 1.0 + 2.0i` |
+| complex128 | Represents a complex number with float64 real and imaginary parts. | `var z complex128 = 3.0 + 4.0i` |
+
+Note that in Go, variables are strongly typed, which means that once a variable is declared with a specific type, its type cannot be changed.
+
+
+
+In Go, a variable is a storage location that holds a value of a specific type. It is declared using the keyword `var` followed by the variable name and the type of the value it will hold. Here is an example:
+
+```
+var age int // declares a variable named age of type int
+```
+
+You can also initialize a variable with a value when you declare it using the `=` operator:
+
+```
+var name string = "John" // declares a variable named name of type string and initializes it to "John"
+```
+
+Go also allows you to declare and initialize variables in a shorter way using the `:=` operator, which infers the variable type based on the value being assigned:
+
+```
+age := 30 // declares and initializes a variable named age of type int to the value 30
+```
+
+You can also declare and initialize multiple variables in a single statement:
+
+```
+var width, height int = 100, 50 // declares and initializes two variables of type int named width and height with values 100 and 50, respectively
+```
+
+In Go, variables are strongly typed, which means that once a variable is declared with a specific type, its type cannot be changed.
