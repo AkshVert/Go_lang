@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	fmt.Println("Welcome to Go Learning")
+
+	// Getting the current time
+	presentTime := time.Now()
+	fmt.Println(presentTime)
+
+	// Formatting and printing the current time
+	fmt.Println(presentTime.Format("01-02-2006 15:04:05 Monday"))
+
+	// Creating a new time instance
+	newDate := time.Date(2020, time.August, 10, 23, 23, 0, 0, time.UTC)
+
+	// Formatting and printing the new time instance
+	fmt.Println(newDate.Format("01-02-2006 Monday"))
+}
+
+
+Output:-
+Welcome to Go Learning
+2023-05-11 07:56:56.865118383 +0000 UTC m=+0.000072091
+05-11-2023 07:56:56 Thursday
+08-10-2020 Monday
