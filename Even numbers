@@ -1,10 +1,37 @@
+## Checking the input number is Even or Odd
+
+package main
+import "fmt"
+
+func main() {
+    var num1 int
+
+    fmt.Print("Enter a number: ")
+    _, err := fmt.Scanf("%d", &num1)
+    if err != nil {
+        fmt.Println("Error:", err)
+        return
+    }
+    if num1 % 2 == 0{
+    fmt.Println("Given number is even")
+    } else {
+     fmt.Println("Given number is odd")
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Prinitng Even and Odd Numbers from 1 - 10 :
+
 package main
 import "fmt"
 
 func main() {
     for i :=1; i <= 10; i++{
         if i%2 == 0{
-            fmt.Println("Even Numbers are",i)
+            fmt.Println(i,"is an Even Number")
+        } else {
+            fmt.Println(i,"is an Odd Number")
         }
     }
 }
