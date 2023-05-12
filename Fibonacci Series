@@ -1,0 +1,53 @@
+package main
+import "fmt"
+
+func main() {
+    a := 0
+    b := 1
+    for i := 0; i < 10; i++ {
+        fmt.Println(a)
+        copy := a + b
+        a = b
+        b = copy
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Printing the sum of Even fibonnaci series:- 
+
+package main
+
+import "fmt"
+
+func main() {
+    // Declare variables for the first two Fibonacci numbers (0 and 1)
+    a := 0
+    b := 1
+
+    // Declare a variable to keep track of the sum of even Fibonacci numbers
+    sum := 0
+
+    // Declare a constant for the maximum value of the Fibonacci sequence
+    const max = 200
+
+    // Loop through the Fibonacci sequence until we reach the maximum value
+    for b < max {
+        // Calculate the next number in the Fibonacci sequence
+        buff := a + b
+
+        // Check if the current Fibonacci number is even
+        if b%2 == 0 {
+            // If it is even, add it to the sum of even Fibonacci numbers
+            sum += b
+        }
+
+        // Update the values of a and b to continue the Fibonacci sequence
+        a = b
+        b = buff
+    }
+
+    // Print the sum of even Fibonacci numbers to the console
+    fmt.Printf("The sum is: [%d]\n", sum)
+}
+
+Output - The sum is: [188]
